@@ -1,6 +1,6 @@
 
 /**
- * Created by barssaka on 15/12/21.
+ * Wanna play splatoon.
  */
 import java.util.*;
 public class Main {
