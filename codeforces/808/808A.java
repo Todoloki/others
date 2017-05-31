@@ -30,4 +30,6 @@ Method 2:
   We use the rule that if the number is less than 9, then return 1.
   we can calcualte the difference between the current number and next magic number by calcualting the current number without first digit and the minimum value 
   with the same digit as the current number.
+  At most several operations are needed.
+  So this method is much faster than the former one.
 */
