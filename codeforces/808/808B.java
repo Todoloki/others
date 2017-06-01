@@ -46,7 +46,8 @@ Method 3:
     number of integer is less than 3 * 10 ^ 9 but we can encounter the multiplication up to more than 2 * 10 ^ 10. 
     We need to always be careful of the range and also the precision of double.
     There's a long way to go. With my favourite Zelda- The breath of the wild.
-  
+    Time complexity O(n), space complexity, since we do not use extra space other than the space used for storing the original array.
+    So the space complexity should be O(1).
   */
 /**
  * Wanna play splatoon.
