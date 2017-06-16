@@ -18,7 +18,7 @@ public class Solution {
                     if (product < largest) {
                         break;
                     }
-                    if (isParlindrome(product)) {
+                    if (isParlindrome(product) && product < n) {
                         largest = Math.max(largest, product);
                         //System.out.println(i + " " + j);
                     }
@@ -39,7 +39,10 @@ public class Solution {
     }
 }
 
+
+
 // for hackerrank
 // if we use first three digit, time complexity will be the same
 // bug: not use Min(999, n / i) will not guarantee j is a three-digit number
 // since numerate 100 - 900 is 10^3 and we also need 10^3 to check if the parlindrome 6-digit number can be product of two three-digit numbers
+// bug: the product we get should be less than n rather than equals to it.
