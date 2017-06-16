@@ -1,6 +1,7 @@
 /**
  * Wanna play splatoon.
  */
+// use the information that number is definately a multiple of 11.
 import java.util.*;
 public class Solution {
     public static void main(String [] args)
