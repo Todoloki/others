@@ -5,6 +5,9 @@
  // get the minmum common multiplier costs O(n)
  // find how many times a prime can appear in minimum common cost O(n) time
  // O(n) space needed
+
+// bug that once occur: use O(sqrt(n)) as length for finding primes, but we need to consider all the primes that is less
+// than n, not just those less than sqrt(n)
 import java.util.*;
 public class Solution {
     public static void main(String [] args)
