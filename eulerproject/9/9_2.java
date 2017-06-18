@@ -19,4 +19,4 @@ public class Solution {
     }
 }
 // straightforward approach
-// O(n * n * n) time
+// O(n * n) time
