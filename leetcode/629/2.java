@@ -166,3 +166,27 @@ public class Solution {
 // time complexity O(n * k)
 // space complexity O(n * k)
 
+// a bug exist above: the number can be very large, so mod 1000000007 is needed and also you need to make
+// sure that every answer is not a negtive number
+public class Solution {
+    public int kInversePairs(int n, int k) {
+        int[][] dp = new int[n + 1][k + 1];
+        for (int i = 0; i <= n; i++) {
+            dp[i][0] = 1;
+        }
+        for (int i = 1; i <= n; i++) {
+            int sum = 0;
+            for (int j = 0; j <= k; j++) {
+                if (j > i - 1) {
+                    sum -= dp[i - 1][j - i];
+                }
+                sum += dp[i - 1][j];
+                sum %= 1000000007;
+                sum += 1000000007;
+                sum %= 1000000007;
+                dp[i][j] = sum;
+            }
+        }
+        return dp[n][k];
+    }
+}
