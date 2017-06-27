@@ -124,3 +124,6 @@ public class Excel {
 // dfs use O(m * n * m * n) edge at most.
 // for every node we have O(m * n) so time complexity is O((m + n) ^ 2)
 // space O(m * n * m * n) also O((m * n) ^ 2)
+
+// this is not the optimal solution, since when we use set operation, we might visit and calculate for a cell several times.
+// topological sort should be used.  will reduce time complexity.
