@@ -118,3 +118,9 @@ public class Excel {
 // space O(r * w * r * w) for O(r * w) cell, each cell has a hashmap of size O(h * w)
 // for sum, the list of length l, then O(l * r * w) time
 // for get O(1)
+
+// the above is wrong
+// this is already the optimal solution
+// dfs use O(m * n * m * n) edge at most.
+// for every node we have O(m * n) so time complexity is O((m + n) ^ 2)
+// space O(m * n * m * n) also O((m * n) ^ 2)
