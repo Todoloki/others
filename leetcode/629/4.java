@@ -34,3 +34,6 @@ public class Solution {
         return sum;
     }
 }
+
+// use memoizatation
+// O(n * k) time O(n * k) space
