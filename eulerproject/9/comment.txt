@@ -1,0 +1,50 @@
+This is just a comment for the pdf file that can be downloaded from the official site.
+
+gcd(a, b, c) = 1 => triplet (a, b, c) is primitive
+
+gcd(a, b) = gcd(a, c) = gcd(b, c) <= a ^ 2 + b ^ 2 = c ^ 2
+
+ancient greeks => if gcd(a, b, c) = 1 => a, b, c can be represented as a = m ^ 2 - n ^ 2, b = 2 * m * n, c = m ^ 2 + n ^ 2
+where a is not necessarily larger than b, they can be exchanged if a < b
+a, b, c will be primitive triplet if gcd(m, n) = 1
+
+for a + b + c = s, we can turn them into the primitive triplets above and just add largest common divisor
+
+we can represent s as 2 * m * (m + n) * d
+
+m, n one of them should be even otherwise, a, b, c will be all even, cannot assume a, b, c is a primitive triplet.
+
+then we can start from 2 to limit of m which is floor(sqrt(s / 2)) - 1
+
+for each m, we check if m can be divided by s / 2;
+
+then we need to find a k wich is less than 2 * m and s / 2 / m
+
+k should be odd.
+
+we can have d, n, a, b, c now which is valid, output them.
+
+
+verification:
+(a, b, c) = (m ^ 2 - n ^ 2, 2 * m * n, m ^ 2 + n ^ 2) is primitive triplet <=> gcd(m, n) = 1 and one of m, n is even
+
+=> if  m, n are both odd, then a, b, c is not primitive triplet
+=> if m, n is not gcd(m, n) = 1, then a, c can divide p ^ 2, also a, b, c can not be primitive triplet
+
+<= a, b, c is not primitive triplet, p a divisor of m, also divisor of n not gcd(m,n) = 1
+
+derivation
+x ^ 2 + y ^ 2 = 1, x = a / c, y = b / c, circle with radius of 1.
+if a line through (0, -1) and with slop s, then can be represented as (t, s * t - 1)
+use that and we can get x, y as transactions. we will then get t1 as x, s * t1 - 1 as y, use s = m / n
+we can get representation for a, b, and c.
+
+if (a, b, c) is primitive, the representation is a multiple of (a, b, c)
+so we can do the representation as above.
+
+if (m, n) one of them is even, then we can know gcd(m, n) is 1 according to verification
+
+otherwise, we can create u, v that one of u, v is odd and we can construct a new triplet to be a primitive triplet.
+
+
+
