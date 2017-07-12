@@ -40,3 +40,4 @@ public class Solution {
         return sum;
     }
 }
+// O(limit * limit * sqrt(limit)) time
