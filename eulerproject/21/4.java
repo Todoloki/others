@@ -33,4 +33,5 @@ public class Solution {
         return sum;
     }
 }
-// cost only O(limit ^ 2) time
+// cost only O(limit ^ sqrt(limit)) time
+// O(1) space
