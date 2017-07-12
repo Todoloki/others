@@ -6,9 +6,6 @@ public class Solution {
         int sum = 0;
         for (int i = 1; i < limit; i++) {
             for (int j = i + 1; j < limit; j++) {
-                if (i == j) {
-                    continue;
-                }
                 int sumOfI = getSumOfDivisor(i);
                 int sumOfJ = getSumOfDivisor(j);
                 if (sumOfI == j && sumOfJ == i) {
