@@ -13,7 +13,6 @@ public class Solution {
                 int sumOfJ = getSumOfDivisor(j);
                 if (sumOfI == j && sumOfJ == i) {
                     sum += i;
-                    sum += j;
                 }
             }
         }
