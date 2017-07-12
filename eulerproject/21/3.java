@@ -38,4 +38,5 @@ public class Solution {
         return sum;
     }
 }
-// still O(limit ^ 3) but cost only half the time 2.java cost.
+// still O(limit ^ 2 * sqrt(limit)) but cost only half the time 2.java cost.
+// O(1) space
