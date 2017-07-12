@@ -32,3 +32,5 @@ public class Solution {
         System.out.println(res);
     }
 }
+// O(limit * sqrt(limit)) time
+// O(limit) space
