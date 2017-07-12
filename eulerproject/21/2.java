@@ -2,17 +2,23 @@ import java.util.*;
 import java.math.*;
 public class Solution {
     public static void main(String [] args) {
-        int limit = 100;
+        int limit = 1000;
         int sum = 0;
         for (int i = 1; i < limit; i++) {
             for (int j = 1; j < limit; j++) {
+                if (i == j) {
+                    continue;
+                }
                 int sumOfI = getSumOfDivisor(i);
                 int sumOfJ = getSumOfDivisor(j);
                 if (sumOfI == j && sumOfJ == i) {
                     sum += i;
+                    sum += j;
                 }
             }
         }
+        // System.out.println(getSumOfDivisor(220));
+        // System.out.println(getSumOfDivisor(284));
         System.out.println(sum);
     }
     public static int getSumOfDivisor(int num) {
@@ -35,7 +41,3 @@ public class Solution {
         return sum;
     }
 }
-// getSumOfDivisor cost O(limit) time
-// at most limit * limit * 2 times of this method will be called
-// O(limit ^ 3) time
-// O(1) space
