@@ -178,3 +178,6 @@ public class Solution {
         return getGCD(b, a % b);
     }
 }
+// I can not optimize it anymore
+// seems https://github.com/yuechi/projecteuler have a good solution
+// I will see this solution first, understand and then get the answer.
