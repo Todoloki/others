@@ -182,3 +182,8 @@ public class Solution {
 // seems https://github.com/yuechi/projecteuler have a good solution
 // I will see this solution first, understand and then get the answer.
 // Looks like this person also can not pass case 4 and he deal with it using another method hahahaha :)
+
+// Seems he use for every two cancelled number, get the original number and find such pairs
+// 10 * 10 ^ 4 * 10 ^ 4 * 4 * 4
+
+// use the method I currently used, time complexity is 10 * 10 ^ 4 * 4 * (10 ^ 5 * 10 ^ 5)
