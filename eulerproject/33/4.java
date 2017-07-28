@@ -181,3 +181,4 @@ public class Solution {
 // I can not optimize it anymore
 // seems https://github.com/yuechi/projecteuler have a good solution
 // I will see this solution first, understand and then get the answer.
+// Looks like this person also can not pass case 4 and he deal with it using another method hahahaha :)
