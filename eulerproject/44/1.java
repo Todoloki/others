@@ -7,10 +7,10 @@ public class Mysample {
 
         List<Integer> list = new ArrayList<Integer>();
         HashSet<Integer> set = new HashSet<Integer>();
-
+        boolean find = false;
         int n = 1;
 
-        while (true) {
+        while (find == false) {
             int temp = n * (3 * n - 1) / 2;
             for (int i = 0; i < list.size(); i++) {
                 int m = temp - list.get(i);
@@ -20,6 +20,7 @@ public class Mysample {
                 }
                 if (set.contains(m) && set.contains(diff)) {
                     System.out.println(diff);
+                    find = true;
                     break;
                 }
             }
