@@ -29,3 +29,5 @@ public class Mysample {
         System.out.println(counter);
     }
 }
+// use O(1) memory instead of a 1D array
+// use more information about combination
