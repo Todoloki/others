@@ -9,7 +9,7 @@ public class Mysample {
         int r = 0;
         int cnr = 1;
         int limit = 1000000;
-        while (r <= (n + 1) / 2) {
+        while (r <= n / 2) {
             if (cnr <= limit) {
                 // cnr = n! / r! * (n - r)!
                 // cnr+1 = n! / (r + 1) * (n - r)
